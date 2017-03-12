@@ -31,7 +31,7 @@ $ npm install handlebars --save
 
 vision module contains views that used for add file (html,css,..) reply.view('file_name'), and in handlebars we can use the template to pass variable from js into html file
 
-``js
+```js
 server.views({
    engines : {
      html : require('handlebars')
@@ -39,7 +39,7 @@ server.views({
    relativeTo : __dirname,
      path : 'templates'
    });
-``
+```
 
 ####  how to server static content
 we can add static content without vision and handlebars, just by route any html file
