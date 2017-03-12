@@ -1,12 +1,12 @@
-Hapi.js
+### Hapi.js
 
-hapi.js is an open-source framework that provides us with different objects and methods for abstracting HTTP, just you need to install hapi by ``js $ npm install hapi --save ``, and make connection with server to used it
+#### hapi.js is an open-source framework that provides us with different objects and methods for abstracting HTTP, just you need to install hapi by ``js $ npm install hapi --save ``, and make connection with server to used it
 
 
 ##### how to do routing and how to access query params and path params
  after call hapi, and make connection with server, we can use route that contains object of (method, path, and handler)
  
-``js
+```js
  server.route({
   method : 'GET',
   path : '/{userName}',
@@ -17,7 +17,7 @@ hapi.js is an open-source framework that provides us with different objects and 
 
 });
 
-``
+```
 
 
 #### how to implement views and handlebar.js
