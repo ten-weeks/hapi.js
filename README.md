@@ -5,6 +5,7 @@ hapi.js is an open-source framework that provides us with different objects and 
 
 ##### how to do routing and how to access query params and path params
  after call hapi, and make connection with server, we can use route that contains object of (method, path, and handler)
+ 
  ``js
  server.route({
   method : 'GET',
@@ -15,19 +16,22 @@ hapi.js is an open-source framework that provides us with different objects and 
   }
 
 });
+
  ``
 
 
 #### how to implement views and handlebar.js
 
 By vision and handlebars module
-```js $ npm install vision --save
+
+``js $ npm install vision --save
 $ npm install handlebars --save
-```
+``
 ##### we used vision to add dynamic content from js to html file
 
 vision module contains views that used for add file (html,css,..) reply.view('file_name'), and in handlebars we can use the template to pass variable from js into html file
-```js
+
+``js
 server.views({
    engines : {
      html : require('handlebars')
@@ -35,7 +39,7 @@ server.views({
    relativeTo : __dirname,
      path : 'templates'
    });
-```
+``
 
 ####  how to server static content
 we can add static content without vision and handlebars, just by route any html file
