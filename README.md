@@ -41,3 +41,5 @@ server.views({
 we can add static content without vision and handlebars, just by route any html file
 
 #### inert is amodule that used for add image in website
+
+#### we use postgres databsae to insert,select variable inside handler for hapi server
